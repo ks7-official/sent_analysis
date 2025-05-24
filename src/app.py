@@ -417,7 +417,7 @@ if os.path.exists(output_dir):
                     try:
                         image = Image.open(plot_path)
                         with col:
-                            st.image(image, caption=plot_files[i + j], use_column_width=True)
+                            st.image(image, caption=plot_files[i + j], use_container_width=True)
                     except Exception as e:
                         col.warning(f"Failed to load {plot_files[i + j]}: {str(e)}")
     else:
